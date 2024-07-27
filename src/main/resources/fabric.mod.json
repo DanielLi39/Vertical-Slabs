@@ -3,10 +3,14 @@
 	"id": "vertical_slabs",
 	"version": "${version}",
 	"name": "Vertical Slabs",
-	"description": "Adds vertical slab variants to every vanilla slab variant, with similar vanilla ways to craft/acquire them.",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Lexwomy"
+		"Me!"
 	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
 	"license": "CC0-1.0",
 	"icon": "assets/vertical_slabs/icon.png",
 	"environment": "*",
@@ -16,8 +20,8 @@
 		]
 	},
 	"depends": {
-		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.21",
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.6",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

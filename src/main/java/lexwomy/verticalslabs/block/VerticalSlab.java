@@ -4,21 +4,15 @@ import lexwomy.verticalslabs.VerticalSlabs;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
 import net.minecraft.block.Oxidizable;
-import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.block.AbstractBlock.Settings;
-
-import java.util.Set;
 
 import static net.minecraft.block.Blocks.*;
 
@@ -71,9 +65,6 @@ public class VerticalSlab {
             itemGroup.add(VERTICAL_POLISHED_DEEPSLATE_SLAB);
             itemGroup.add(VERTICAL_DEEPSLATE_BRICK_SLAB);
             itemGroup.add(VERTICAL_DEEPSLATE_TILE_SLAB);
-            itemGroup.add(VERTICAL_TUFF_SLAB);
-            itemGroup.add(VERTICAL_POLISHED_TUFF_SLAB);
-            itemGroup.add(VERTICAL_TUFF_BRICK_SLAB);
             itemGroup.add(VERTICAL_BRICK_SLAB);
             itemGroup.add(VERTICAL_MUD_BRICK_SLAB);
             itemGroup.add(VERTICAL_SANDSTONE_SLAB);
@@ -132,9 +123,6 @@ public class VerticalSlab {
             itemGroup.add(VERTICAL_POLISHED_DEEPSLATE_SLAB);
             itemGroup.add(VERTICAL_DEEPSLATE_BRICK_SLAB);
             itemGroup.add(VERTICAL_DEEPSLATE_TILE_SLAB);
-            itemGroup.add(VERTICAL_TUFF_SLAB);
-            itemGroup.add(VERTICAL_POLISHED_TUFF_SLAB);
-            itemGroup.add(VERTICAL_TUFF_BRICK_SLAB);
             itemGroup.add(VERTICAL_BRICK_SLAB);
             itemGroup.add(VERTICAL_MUD_BRICK_SLAB);
             itemGroup.add(VERTICAL_SANDSTONE_SLAB);
@@ -320,8 +308,8 @@ public class VerticalSlab {
 
     public static final Block VERTICAL_COBBLED_DEEPSLATE_SLAB = register(
             new VerticalSlabBlock(Settings.copy(COBBLED_DEEPSLATE_SLAB)),
-                "vertical_cobbled_deepslate_slab",
-                true
+            "vertical_cobbled_deepslate_slab",
+            true
     );
 
     public static final Block VERTICAL_POLISHED_DEEPSLATE_SLAB = register(
@@ -339,24 +327,6 @@ public class VerticalSlab {
     public static final Block VERTICAL_DEEPSLATE_TILE_SLAB = register(
             new VerticalSlabBlock(Settings.copy(DEEPSLATE_TILE_SLAB)),
             "vertical_deepslate_tile_slab",
-            true
-    );
-
-    public static final Block VERTICAL_TUFF_SLAB = register(
-            new VerticalSlabBlock(Settings.copy(TUFF_SLAB)),
-            "vertical_tuff_slab",
-            true
-    );
-
-    public static final Block VERTICAL_POLISHED_TUFF_SLAB = register(
-            new VerticalSlabBlock(Settings.copy(POLISHED_TUFF_SLAB)),
-            "vertical_polished_tuff_slab",
-            true
-    );
-
-    public static final Block VERTICAL_TUFF_BRICK_SLAB = register(
-            new VerticalSlabBlock(Settings.copy(TUFF_BRICK_SLAB)),
-            "vertical_tuff_brick_slab",
             true
     );
 

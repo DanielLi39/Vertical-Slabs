@@ -1,3 +1,4 @@
+
 package lexwomy.verticalslabs.block;
 
 import com.mojang.serialization.MapCodec;
